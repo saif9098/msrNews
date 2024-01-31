@@ -12,8 +12,8 @@ function search(){
 }
 let itemSelector =null;
 function navnews(id){
-    loading()
     fetchnews(id)
+      loading()
     const navitem = document.getElementById(id)
     itemSelector?.classList.remove('active')
     itemSelector =navitem;
