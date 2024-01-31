@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7ba9908fc8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="container">
+    <nav class="navbar">
+        <img src="PhotoRoom-20240127_140157.png" alt="">
+        <ul>
+            <li><a id="ipl" onclick="navnews('ipl')" href="#">IPL</a></li>
+            <li><a id="politics" onclick="navnews('politics')" href="#">Politics</a></li>
+            <li><a id="tech" onclick="navnews('tech')" href="#">Technology</a></li>
+        </ul>
+        <div>
+        <input id="input-data" type="text" placeholder="e.g. Science" onkeypress="search()">
+        <button id="search-news">Search</button>
+    </div>
+    </nav>
+    <main>
+        <div class="loader-container">
+            <div class="loader"></div>
+        </div>
+    
+        <div class="cards-container" id="cards-container">
+        
+        </div>
+    </main>
+    <template  id="news-temp">
+        <div class="card">
+            <div class="card-header">
+                <img id="news-img" src="" alt="">
+            </div>
+            <div class="card-content">
+                <h2 id="news-title">title</h2>
+                <h6 id="news-source">ff gff </h6>
+                <p class="news-desc" id="news-desc">sdgffgdsfgdf ff dsjdsf weeeeeeee fffff vfffffff gdgggggg gg rr </p>
+            </div>  
+    </template>
+</div>
+<script src="logic.js"></script>
+</body>
+
+</html>

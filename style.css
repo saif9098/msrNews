@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(191, 191, 218);
+}
+.container{
+    padding: 6px 8%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navbar img{
+    height: 30px;
+    width: 160px;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.navbar ul li a{
+    color:  teal ;
+    text-decoration: none;
+    font-size: 16px;
+}
+.navbar .active{
+    color: black;
+}
+.navbar div input{
+    border: 1px solid teal;
+    border-radius: 3%;
+    width: 200px;
+    height: 25px;
+}
+.navbar div button{
+    border: 1px solid teal;
+    border-radius: 7%;
+    height: 25px;
+    color: white;
+    background-color: rgb(30, 138, 201);
+    margin-left: 8px;
+
+}
+main{
+    margin-top: 22px;
+}
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    display: none; /* Initially hide the loader */
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+.card{
+    width: 340px;
+    background-color: rgb(52, 161, 161);
+    border-radius: 4px;
+    min-height: 360px;
+    box-shadow: 0 0 4px rgb(30, 32, 34) ;
+    overflow: hidden;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    
+}
+.card:hover{
+    background-color: rgb(19, 112, 112);
+    box-shadow: 0 0 4px rgb(78, 83, 88) ;
+    transform: translateY(-2px);
+}
+.card img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 12px;
+}
+#news-source{
+    margin: 8px 0;
+}
+#news-desc{
+    color: rgb(204, 204, 245);
+}
